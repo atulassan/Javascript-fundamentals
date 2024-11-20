@@ -15,4 +15,4 @@ function printLastName(lastName) {
     console.log(lastName)
 }
 
-printFirstName('Athavullah', 'Atulassan')
+printFirstName('Athavullah', 'Atulassan');

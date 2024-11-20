@@ -25,7 +25,7 @@ console.log(pureFuns(3)) // return 5
 
 /*Impure Function*/
 
-function ImpureFunction(a) {
+function ImpureFunction(a) { // x value defined at top of the file
     x++;
     return a+x;
 }
