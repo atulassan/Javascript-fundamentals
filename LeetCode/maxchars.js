@@ -20,3 +20,25 @@ function maxChars(str){
 }
 
 maxChars('aaaassssccccccccdddddrrrrr');
+
+function isCharExists(a,b) {
+ let arrsplt = a.split('');
+let cth = {}
+ for(let char of arrsplt){
+  if(cth[char]) {
+   cth[char] = cth[char] + 1  
+  } else {
+    cth[char] = 1
+  }
+ }
+ let findVal = null;
+ for (const [key, val] of Object.entries(cth)) {
+   console.log(key, val);
+   if(key == b && val > 1) {
+    findVal = key;   
+   } 
+ }
+ return findVal != null ? true : false;
+}
+
+console.log(isCharExists('atha', 'a'));
