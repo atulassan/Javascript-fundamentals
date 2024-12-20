@@ -42,3 +42,19 @@ let cth = {}
 }
 
 console.log(isCharExists('atha', 'a'));
+maxChars('aaaassssccccccccdddddrrrrr'); // { a: 4, s: 4, c: 8, d: 5, r: 5 }
+
+
+function maxChars1(str) {
+    let chars = {};
+    for(let char of str) {
+        if(!chars[char]) {
+            chars[char] = 1
+        } else {
+            chars[char]++;
+        }
+    }
+    console.log(chars);
+}
+
+maxChars1('aaaabbbnsssse'); // { a: 4, b: 3, n: 1, s: 4, e: 1 }
